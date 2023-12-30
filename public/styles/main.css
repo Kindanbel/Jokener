@@ -1,0 +1,175 @@
+#section1{
+    padding: 50px 10% 0;
+}
+
+#section1 .header{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 20px 30px;
+}
+
+#section1 .header .header-img{
+    width: 500px;
+    min-width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(/public/images/cartlaugh1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section1 .header h1{
+    font-size: 50px;
+    color: #fff;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+
+#section1 .header p{
+    font-size: 50px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+#section1 .header p span{
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+#section1 .explanation{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+#section1 .explanation .expl-img{
+    width: 500px;
+    min-width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(/public/images/cartlaugh3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section1 .explanation .expl-text{
+    width: 50%;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+/*Section2*/
+
+#section2{
+    padding: 100px 10%;
+}
+
+#section2 .container h1{
+    font-size: 35px;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+#section2 .container .name-label{
+    font-size: 20px;
+    color: #fff;
+}
+
+#section2 .container #name-id{
+    width: 50%;
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: 5px solid chocolate;
+    margin-bottom: 70px;
+}
+
+#section2 .container #form{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+#section2 .container #form .category-select{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#section2 .container #form .category-select .header{
+    font-size: 20px;
+    color: #fff;
+}
+
+#section2 .container #form .category-select .form{
+    width: 50%;
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: 5px solid chocolate;
+}
+
+#section2 .container #form .type{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#section2 .container #form .type .type-header{
+    font-size: 20px;
+    color: #fff;
+}
+
+#section2 .container #form .type span{
+    font-size: 20px;
+    color: #fff;
+}
+
+#section2 .container #form .amount{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#section2 .container #form .amount .amount-header{
+    font-size: 20px;
+    color: #fff;
+}
+
+#section2 .container #form .amount .amount-input{
+    width: 20%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 5px solid chocolate;
+}
+
+#section2 .container #form .form-btn{
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: transparent;
+    color: #fff;
+    border: 5px solid #fff;
+    cursor: pointer;
+}
+
+#section2 .container #form .form-button{
+    text-align: center;
+}
+
+/*Section 3*/
+
+#section3{
+    padding: 0 10% 100px;
+}
+
+#section3 .jokes{
+    width: 100%;
+    height: 350px;
+    color: #1a1a1a;
+    background-color: #fff;
+    border-radius: 20px;
+}
