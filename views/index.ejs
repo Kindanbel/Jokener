@@ -1,0 +1,83 @@
+
+<section id="section1">
+    <div class="description-container">
+        <div class="header">
+            <div class="header-text">
+                <h1>Get a laugh or two</h1>
+                <p><span>with</span>Jokener😂</p>
+            </div>
+
+            <div class="header-img"></div>
+        </div>
+
+        <div class="explanation">
+            <div class="expl-img"></div>
+            <div class="expl-text">
+            Jokener is a fun app that allows users to get fun jokes from the
+            internet. Jokener uses a public API, JOKEAPI, to derive these jokes
+            wich either comes in a single type or in a two-part type.
+
+            Jokener is a project designed for laughs and for fun.
+        </div>
+
+        </div>
+    </div>
+</section>
+
+<!--Jokener section-->
+<section id="section2">
+    <div class="container">
+        <h1>Get a joke to make you laugh today 🤣</h1>
+
+        <label for="name" class="name-label">Name:</label>
+        <input type="text" name="name" placeholder="Write Your Name" id="name-id">
+
+        <form action="/submit" method="post" id="form">
+            <div class="category-select">
+                <div class="header">Choose a category:</div>
+            <select name="categpries" class="form">
+                <option value="" data-display="Select">Any</option>
+                <option value="programming">programming</option>
+                <option value="misc">Misc</option>
+                <option value="pun">Pun</option>
+                <option value="spooky">Spooky</option>
+                <option value="dark">Dark</option>
+                <option value="christmass">Christmas</option>
+            </select>
+        </div>
+        <div class="category-select">
+            <div class="header">Choose your preferred language:</div>
+            <select name="language" class="form">
+                <option value="" data-display="Select">Language</option>
+                <option value="en">en-English</option>
+                <option value="cs">cs-Czech</option>
+                <option value="fr">fr-France</option>
+                <option value="pt">pt-Portuguese</option>
+                <option value="de">de-Germany</option>
+                <option value="es">es-Spanish</option>
+            </select>
+        </div>
+        <div class="type">
+            <label for="type" class="type-header">Type:</label>
+            <input type="checkbox" name="single" id="single"><span>Single</span>
+            <input type="checkbox" name="two-part" id="two-part"><span>Two-part</span>
+        </div>
+
+        <div class="amount">
+            <label for="Amount" class="amount-header">Amount:</label>
+            <input type="text" name="amount" value="1" class="amount-input">
+        </div>
+
+        <div class="form-button">
+            <button type="submit" class="form-btn">Get Joke</button>
+        </div>
+        </form>
+    </div>
+</section>
+
+<!--Joke section-->
+<section id="section3">
+    <div class="jokes">
+
+    </div>
+</section>
