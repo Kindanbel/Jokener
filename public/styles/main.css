@@ -84,8 +84,8 @@
     padding: 20px 30px;
     border-radius: 30px;
     border: 5px solid chocolate;
-    margin-bottom: 70px;
     margin-left: 250px;
+    margin-top: 20px;
 }
 
 #section2 .container #form{
@@ -132,24 +132,20 @@
     color: #fff;
 }
 
-#section2 .container #form .amount{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-#section2 .container #form .amount .amount-header{
-    font-size: 20px;
-    color: #fff;
-}
-
-#section2 .container #form .amount .amount-input{
+#section2 .container #form #single{
     width: 20%;
     padding: 10px;
     border-radius: 30px;
     border: 5px solid chocolate;
-    margin-left: 250px;
 }
+
+#section2 .container #form #two-part{
+    width: 20%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 5px solid chocolate;
+}
+
 
 #section2 .container #form .form-btn{
     width: 200px;
@@ -177,7 +173,45 @@
     color: #1a1a1a;
     background-color: #fff;
     border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
+
+
+#section3 .jokes .username{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    color: #1a1a1a;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+
+#section3 .jokes p{
+    padding-top: 15px;
+}
+
+#section3 .jokes .details{
+    position: absolute;
+    bottom: 20px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 300px;
+}
+
+
+
+
+
+
 
 
 
@@ -255,7 +289,20 @@
     #section2{
         padding: 100px 5%;
     }
+
+    #section3 .jokes .details{
+        position: absolute;
+        bottom: 20px;
+        padding: 0 10px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
 }
+
+
 
 @media(max-width: 768px){
     #section1 .header{
@@ -350,6 +397,18 @@
         align-items: center;
         gap: 10px;
     }
+
+    #section3 .jokes .details{
+        position: absolute;
+        bottom: 20px;
+        padding: 0 10px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    
 }
 
 
