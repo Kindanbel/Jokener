@@ -1,3 +1,4 @@
+<%- include('partials/header.ejs') %>
 
 <section id="section1">
     <div class="description-container">
@@ -29,13 +30,15 @@
     <div class="container">
         <h1>Get a joke to make you laugh today 🤣</h1>
 
-        <label for="name" class="name-label">Name:</label>
-        <input type="text" name="name" placeholder="Write Your Name" id="name-id">
+        <div class="name-input">
+            <label for="name" class="name-label">Name:</label>
+            <input type="text" name="name" placeholder="Write Your Name" id="name-id">
+        </div>
 
         <form action="/submit" method="post" id="form">
             <div class="category-select">
-                <div class="header">Choose a category:</div>
-            <select name="categpries" class="form">
+                <div class="header" >Choose a category:</div>
+            <select name="categpries" class="form" id="cate-form">
                 <option value="" data-display="Select">Any</option>
                 <option value="programming">programming</option>
                 <option value="misc">Misc</option>
@@ -81,3 +84,6 @@
 
     </div>
 </section>
+
+
+<%- include('partials/footer.ejs') %>

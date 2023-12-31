@@ -5,16 +5,15 @@
 #section1 .header{
     display: flex;
     align-items: center;
-    gap: 70px;
-    padding: 20px 30px;
+    gap: 130px;
 }
 
 #section1 .header .header-img{
     width: 500px;
-    min-width: 500px;
+    min-width: 300px;
     height: 300px;
     border-radius: 10px;
-    background: url(/public/images/cartlaugh1.jpg);
+    background: url(/images/cartlaugh1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,7 +49,7 @@
     min-width: 500px;
     height: 300px;
     border-radius: 10px;
-    background: url(/public/images/cartlaugh3.jpg);
+    background: url(/images/cartlaugh3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,6 +85,7 @@
     border-radius: 30px;
     border: 5px solid chocolate;
     margin-bottom: 70px;
+    margin-left: 250px;
 }
 
 #section2 .container #form{
@@ -98,6 +98,10 @@
     display: flex;
     gap: 20px;
     align-items: center;
+}
+
+#section2 .container #form #cate-form{
+    margin-left: 120px;
 }
 
 #section2 .container #form .category-select .header{
@@ -144,6 +148,7 @@
     padding: 10px;
     border-radius: 30px;
     border: 5px solid chocolate;
+    margin-left: 250px;
 }
 
 #section2 .container #form .form-btn{
@@ -172,4 +177,225 @@
     color: #1a1a1a;
     background-color: #fff;
     border-radius: 20px;
+}
+
+
+
+
+@media(max-width: 1299px){
+    #section1 {
+        padding: 50px 5%;
+    }
+
+    #section1 .header h1{
+        font-size: 35px;
+    }
+
+    
+    #section1 .header p{
+        font-size: 35px;
+    }
+
+    #section1 .header {
+        gap: 260px;
+    }
+
+    #section1 .header .header-img{
+        width: 600px;
+        min-width: 500px;
+        height: 350px;
+        border-radius: 10px;
+        background: url(/images/cartlaugh1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media(max-width: 1100px){
+    #section1 {
+        padding: 100px 5%;
+    }
+
+    #section1 .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    #section1 .explanation{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+    }
+
+    #section1 .explanation .expl-img{
+        width: 500px;
+        min-width: 500px;
+        height: 300px;
+        border-radius: 10px;
+        background: url(/images/cartlaugh3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        order: 2;
+    }
+
+    #section1 .explanation .expl-text{
+        width: 80%;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #section2{
+        padding: 100px 5%;
+    }
+}
+
+@media(max-width: 768px){
+    #section1 .header{
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 699px){
+    #section1 .header .header-img{
+        width: 400px;
+        min-width: 400px;
+        height: 350px;
+        border-radius: 10px;
+        background: url(/images/cartlaugh1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #section2 .container .name-label{
+        font-size: 20px;
+        color: #fff;
+    }
+    
+    #section2 .container #name-id{
+        width: 100%;
+        padding: 20px 30px;
+        border-radius: 30px;
+        border: 5px solid chocolate;
+        margin-bottom: 70px;
+        margin-left: 20px;
+    }
+    
+    #section2 .container #form{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    #section2 .container #form .category-select{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    #section2 .container #form #cate-form{
+        margin-left: 10px;
+    }
+    
+    #section2 .container #form .category-select .header{
+        font-size: 20px;
+        color: #fff;
+    }
+    
+    #section2 .container #form .category-select .form{
+        width: 100%;
+        padding: 20px 30px;
+        border-radius: 30px;
+        border: 5px solid chocolate;
+    }
+    
+    #section2 .container #form .type{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    #section2 .container #form .type .type-header{
+        font-size: 20px;
+        color: #fff;
+    }
+    
+    #section2 .container #form .type span{
+        font-size: 20px;
+        color: #fff;
+    }
+    
+    #section2 .container #form .amount .amount-input{
+        width: 20%;
+        padding: 10px;
+        border-radius: 30px;
+        border: 5px solid chocolate;
+        margin-left: 20px;
+    }
+
+
+    #section2 .container .name-input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+
+
+@media(max-width: 557px){
+    #section1 {
+        padding: 150px 5%;
+    }
+
+    #section1 .explanation .expl-img{
+        width: 300px;
+        min-width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        background: url(/images/cartlaugh3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        order: 2;
+    }
+
+    #section1 .explanation .expl-text{
+        width: 100%;
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #section2 .container h1{
+        font-size: 25px;
+        color: #fff;
+        padding-bottom: 50px;
+    }
+
+}
+
+@media(max-width: 420px){
+
+    #section1 .header .header-img{
+        width: 300px;
+        min-width: 300px;
+        height: 350px;
+        border-radius: 10px;
+        background: url(/images/cartlaugh1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }

@@ -49,3 +49,77 @@ body{
 #header nav .list-items .items a:hover{
     outline: 1px solid #ffffff;
 }
+
+#footer{
+    padding: 50px 10% 20px; 
+}
+
+
+#footer .footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+#footer .footer-content .footer-logo a{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+#footer .footer-content .copyright{
+    color: #ffffff;
+}
+
+
+
+
+
+@media(max-width: 1299px){
+    #header{
+        padding: 30px 5%;
+    }
+
+    #hfooter{
+        padding: 50px 5% 20px;
+    }
+}
+
+@media(max-width: 768px){
+    #header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    #header nav .list-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+
+@media(max-width: 489px){
+    #header nav .list-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media(max-width: 438px){
+    #header nav .list-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+
+        padding-bottom: 50px;
+    }
+}
