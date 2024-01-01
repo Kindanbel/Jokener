@@ -45,7 +45,7 @@
                 <option value="Pun">Pun</option>
                 <option value="Spooky">Spooky</option>
                 <option value="Dark">Dark</option>
-                <option value="Christmass">Christmas</option>
+                <option value="Christmas">Christmas</option>
             </select>
         </div>
         <div class="category-select">
@@ -114,8 +114,9 @@
              </div>
              <% } %>
 
-             <% if (locals.error) { %>
+             <% if (locals.error && locals.error2) { %>
               <%= error %>
+             <%= error2 %>
              <% } %>
 
         </div>
