@@ -11,6 +11,14 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}))
 
 
+
+//Working on the home page on the server
+
+app.get("/", (req, res)=>{
+    res.render("index.ejs")
+})
+
+
 app.post("/submit", async (req, res)=>{
     const categoryChosen = req.body.categories;
     const langChosen = req.body.language;
@@ -39,7 +47,6 @@ app.post("/submit", async (req, res)=>{
     const userName = req.body.name
     try {
         let response = await axios.get(`${Joke_URL}/joke/${categoryChosen}?lang=${langChosen}&type=${typeChosen2}`)
-        console.log(response.data.type)
         res.render("index.ejs", {
             content: response.data,
             userName: userName,
@@ -52,10 +59,34 @@ app.post("/submit", async (req, res)=>{
     }
 })
 
+//Working on the create page
 
-app.get("/", (req, res)=>{
-    res.render("index.ejs")
+app.get("/create", (req, res)=>{
+    res.render("create.ejs")
 })
+
+app.post("/post-joke", async (req, res)=>{
+    const categoryChosen = req.body.categories;
+    const langChosen = req.body.language;
+    const singleType = req.body.single;
+    const twopartType = req.body.twopart;
+    const singleJokes = req.body.joke;
+    const formatVersion = 3;
+    try {
+        const response = await axios.post(`${Joke_URL}/submit`, {
+            formatVersion: formatVersion,
+            category: categoryChosen,
+            type: singleType,
+            joke: singleJokes,
+            lang: langChosen
+        })
+        console.log(response.data)
+     
+    } catch (error) {
+        
+    }
+})
+
 
 
 

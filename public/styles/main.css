@@ -208,6 +208,66 @@
 }
 
 
+/*Section4*/
+
+.section4{
+    padding: 50px 10%;
+}
+
+#section2 .header h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+#section2 .header p{
+    color: #fff;
+    font-size: 15px;
+    width: 50%;
+}
+
+#section2 .name-input{
+    margin-top: 50px;
+}
+
+#section2 .container #form .type .form{
+    width: 25%;
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: 5px solid chocolate;
+}
+
+#section2 .container #form .type .header{
+    font-size: 20px;
+    color: #fff;
+}
+
+#section2 .container #form .input-box .joke-label,
+#section2 .container #form .input-box .setup-label,
+#section2 .container #form .input-box .delivery-label{
+    font-size: 20px;
+    color: #fff;
+}
+
+#section2 .container #form .input-box .joke-txt{
+    margin-left: 50px;
+    width: 50%;
+    min-width: 50%;
+    height: 200px;
+
+    padding: 20px 30px;
+}
+
+#section2 .container #form #setup-box{
+    margin-left: 70px;
+} 
+
+#section2 .container #form #joke{
+    margin-left: 75px;
+}
+
+
 
 
 
@@ -309,6 +369,13 @@
         font-size: 35px;
         text-align: center;
     }
+
+    #section2 .header p{
+        color: #fff;
+        font-size: 15px;
+        width: 70%;
+    }
+    
 }
 
 @media(max-width: 699px){
@@ -408,7 +475,15 @@
         justify-content: center;
         gap: 20px;
     }
-    
+
+    #section2 .container #form .type .form{
+        width: 50%;
+        padding: 20px 30px;
+        border-radius: 30px;
+        border: 5px solid chocolate;
+    }
+
+
 }
 
 
@@ -441,6 +516,12 @@
         font-size: 25px;
         color: #fff;
         padding-bottom: 50px;
+    }
+
+    #section2 .header p{
+        color: #fff;
+        font-size: 15px;
+        width: 100%;
     }
 
 }
