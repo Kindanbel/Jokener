@@ -1,4 +1,4 @@
-import express from "express";
+import express, { response } from "express";
 import bodyParser from "body-parser";
 import axios from "axios";
 
@@ -61,32 +61,26 @@ app.post("/submit", async (req, res)=>{
 
 //Working on the create page
 
-app.get("/create", (req, res)=>{
-    res.render("create.ejs")
+app.get("/seejokes", (req, res)=>{
+    res.render("seejokes.ejs")
 })
 
-app.post("/post-joke", async (req, res)=>{
-    const categoryChosen = req.body.categories;
-    const langChosen = req.body.language;
-    const singleType = req.body.single;
-    const twopartType = req.body.twopart;
-    const singleJokes = req.body.joke;
-    const formatVersion = 3;
+app.post("/get-id", async (req, res)=>{
+    const idChosen = req.body.id
+    const categoryChosen = req.body.categories
+    const typeChosen = req.body.typechoose
     try {
-        const response = await axios.post(`${Joke_URL}/submit`, {
-            formatVersion: formatVersion,
-            category: categoryChosen,
-            type: singleType,
-            joke: singleJokes,
-            lang: langChosen
+        const response = await axios.get(`${Joke_URL}/joke/${categoryChosen}?idRange=${idChosen}&type=${typeChosen}`)
+        res.render("seejokes.ejs", {
+            content: response.data
         })
-        console.log(response.data)
-     
     } catch (error) {
-        
+        res.render("seejokes.ejs", {
+            error: "No Matching Joke Found"
+        })
     }
+    
 })
-
 
 
 

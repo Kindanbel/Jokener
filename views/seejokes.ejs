@@ -1,0 +1,135 @@
+<%- include('partials/header.ejs') %>
+
+<section id="section4">
+    <div class="description">
+        <h1>Search and find jokes based on id and search input</h1>
+
+        <p>
+            With Jokener, you can get jokes you saw and liked and forgot to write down.
+            The serch input, allows for specific words that were part of the joke and if word doesn't exist,
+            an error message will be displayed.
+
+            <span>
+                Note: Special characters like hastag(#), ampersand(&), etc., will not be accepted,
+                as this will also give an error message.
+            </span>
+        </p>
+
+        <p>
+            Using Id, jokes can also gotten. The id is from the range 0-1368 and any
+            id number higher than 1368 or lower than 0, will give an error message.
+        </p>
+    </div>
+
+</section>
+
+
+<section id="section5">
+    <div class="form-section">
+
+        <div class="header">
+            <h1>
+                Search by Id section
+            </h1>
+        </div>
+        
+        <form action="/get-id" method="post" id="id-form">
+            <div class="id-input">
+                <label for="name" class="name-label">ID:</label>
+                <input type="text" name="id" placeholder="Write the Id" id="name-id">
+            </div>
+            
+            <div class="category-select">
+                <div class="header">Category:</div>
+            <select name="categories" class="form" id="cate-form">
+                <option value=" " data-display="Select">Any</option>
+                <option value="Programming">Programming</option>
+                <option value="Misc">Misc</option>
+                <option value="Pun">Pun</option>
+                <option value="Spooky">Spooky</option>
+                <option value="Dark">Dark</option>
+                <option value="Christmas">Christmas</option>
+            </select>
+        </div>
+
+        <div class="type">
+            <div class="header">Type:</div>
+            <select name="typechoose" class="form">
+                <option value="" data-display="Select">Type</option>
+                <option  value="single">Single</option>
+                <option  value="twopart">Twopart</option>
+            </select>
+        </div>
+
+        <div class="form-button">
+            <button type="submit" class="form-btn">See Joke</button>
+        </div>
+        </form>
+    </div>
+
+    <div class="form-section">
+
+        <div class="header">
+            <h1>
+                Search by Search-input
+            </h1>
+        </div>
+        
+        <form action="/get-search" method="post" id="search-form">
+            <div class="category-select">
+                <div class="header">Category:</div>
+            <select name="categories" class="form" id="cate-form">
+                <option value="" data-display="Select">Any</option>
+                <option value="Programming">programming</option>
+                <option value="Misc">Misc</option>
+                <option value="Pun">Pun</option>
+                <option value="Spooky">Spooky</option>
+                <option value="Dark">Dark</option>
+                <option value="Christmas">Christmas</option>
+            </select>
+        </div>
+
+        <div class="type">
+            <div class="header">Type:</div>
+            <select class="form">
+                <option value="" data-display="Select">Type</option>
+                <option name="single" value="single">Single</option>
+                <option name="twopart" value="twopart">Twopart</option>
+            </select>
+        </div>
+
+        <div class="search-input">
+            <input type="search" name="search-input" id="search" placeholder="Search Here">
+
+            <div class="form-button">
+                <button type="submit" class="form-btn">Srch</button>
+            </div>
+        </div>
+        
+        </form>
+    </div>
+</section>
+
+<section id="section6">
+    <div class="print-joke">
+        <% if (locals.content) { %>
+         <% if (content.type === "single") { %>
+          <%= content.joke %>
+         <% } else if (content.type === "twopart") { %>
+            <%= content.setup %>
+            <p>
+                <%= content.delivery %>
+            </p>
+         <% } %>
+
+        <% } %>
+    </div>
+
+    <% if (locals.error) { %>
+        <%= error %>
+       <% } %>
+</section>
+
+
+
+<%- include('partials/footer.ejs') %>
