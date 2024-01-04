@@ -267,6 +267,146 @@
     margin-left: 75px;
 }
 
+#section4{
+    padding: 100px 10% 0;
+}
+
+#section4 h1{
+   font-size: 30px;
+   color: #fff;
+   padding-bottom: 20px;
+}
+
+#section4 .description span{
+    display: block;
+    padding-top: 20px;
+}
+
+#section4 .description p{
+    color: #fff;
+    padding-bottom: 20px;
+    width: 80%;
+}
+
+
+#section5{
+    padding: 70px 10% ;
+}
+
+#section5{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#section5 .form-section{
+    position: relative;
+}
+
+#section5 .form-section .header h1{
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+#section5 .form-section form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#section5 .form-section .id-input{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#section5 .form-section .id-input label{
+    color: #fff;
+    font-size: 20px;
+}
+
+#section5 .form-section .id-input #name-id{
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    border: 5px solid chocolate;
+}
+
+#section5 .form-section .category-select,
+#section5 .form-section .type{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#section5 .form-section .category-select .header,
+#section5 .form-section .type .header{
+    font-size: 20px;
+    color: #fff;
+}
+
+#section5 .form-section .category-select #cate-form{
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    border: 5px solid chocolate;
+}
+
+#section5 .form-section .type .form{
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    border: 5px solid chocolate;
+}
+
+
+#section5 .form-section .form-button button{
+    width: 50%;
+    padding: 10px ;
+    border-radius: 30px;
+    background: transparent;
+    color: #fff;
+    border: 5px solid #fff;
+    cursor: pointer;
+}
+
+#section5 .form-section .search-input #search{
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+
+#section5 .form-section .search-input .form-button button{
+    position: absolute;
+    top: 179px ;
+    right: 0px;
+    width: 30%;
+    padding: 5px ;
+}
+
+#section6{
+    padding: 30px 10% 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.print-joke{
+    width: 80%;
+    min-width: 40%;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 
 
 
@@ -360,6 +500,7 @@
         justify-content: center;
         gap: 100px;
     }
+
 }
 
 
@@ -483,6 +624,15 @@
         border: 5px solid chocolate;
     }
 
+    #section5{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+
 
 }
 
@@ -538,4 +688,6 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    
 }
